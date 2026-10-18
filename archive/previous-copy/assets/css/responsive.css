@@ -1,0 +1,198 @@
+@media (max-width: 1280px) {
+  :root { --content-max: 1180px; }
+  .navbar { grid-template-columns: 200px auto 190px; gap: 12px; padding-inline: 20px; }
+  .nav-tab { min-width: 78px; padding-inline: 10px; }
+  .welcome-card { grid-template-columns: minmax(0, 1fr) minmax(220px, 36%); }
+  .growth-solution-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .enhanced-score-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .writing-workbench { grid-template-columns: minmax(0, 68fr) minmax(310px, 32fr); }
+}
+
+@media (max-width: 1050px) {
+  .navbar { grid-template-columns: 150px 1fr auto; }
+  .logo { width: 146px !important; }
+  .nav-user-meta, .nav-back-btn { display: none; }
+  .home-page, .microcourse-page, .personalized-page, .review-page { padding-inline: 18px; }
+  .home-page { min-height: 0; grid-template-rows: auto; }
+  .hero-grid, .home-bottom, .growth-hero, .growth-core-layout, .review-main-layout { grid-template-columns: 1fr; }
+  .welcome-card, .home-overview-card, .record-card, .home-insight-card { height: auto; }
+  .home-overview-card { min-height: 0; }
+  .growth-overview-grid { width: 100%; }
+
+  .workspace-page { position: relative; padding: 8px; }
+  .writing-workbench,
+  .writing-workbench.is-assistant-collapsed,
+  .writing-workbench.is-assistant-collapsed:not(.ai-panel-expanded) { grid-template-columns: minmax(0, 1fr); }
+  .workbench-result-card {
+    position: fixed;
+    z-index: 950;
+    top: var(--nav-height);
+    right: 0;
+    bottom: 0;
+    width: min(420px, 92vw);
+    border-left: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    transform: translateX(0);
+    transition: transform var(--transition-page);
+  }
+  .writing-workbench.is-assistant-collapsed .workbench-result-card,
+  .workbench-result-card.is-collapsed { width: 54px; transform: none; }
+  .workbench-result-card:not(.is-collapsed)::before { content: ""; position: fixed; inset: var(--nav-height) 0 0; z-index: -1; background: rgba(26, 38, 50, .2); transform: translateX(-100%); }
+  .microcourse-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .growth-path-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+  .inline-review-body { grid-template-columns: 1fr; overflow: hidden; }
+  .inline-review-body > .annotation-report { grid-column: 1; }
+  .annotation-main { grid-template-columns: 1fr; overflow-x: hidden; overflow-y: auto; }
+  .annotation-main .inline-review-pane { min-height: auto; overflow: visible; }
+  .annotation-main .inline-review-pane + .inline-review-pane { border-left: 0; border-top: 1px solid var(--color-border); }
+  .annotation-list-panel { border-left: 0; border-top: 1px solid #b9cbe0; }
+  .annotation-main .inline-review-original-list,
+  .annotation-main .inline-review-comment-list { flex: none; overflow: visible; }
+  .annotation-list-panel .inline-review-pane-title { min-height: 48px; }
+  .inline-review-footer { flex-wrap: wrap; }
+}
+
+@media (max-width: 820px) {
+  :root { --nav-height: 58px; }
+  .navbar {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    height: 62px;
+    grid-template-columns: 1fr;
+    padding: 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 0;
+  }
+  .logo, .nav-actions { display: none; }
+  .nav-tabs { width: 100%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .nav-tab { min-width: 0; justify-content: center; padding: 0 4px; font-size: 12px; }
+  .nav-tab.active::after { top: 0; bottom: auto; }
+  .sections-container { min-height: 100vh; padding-bottom: 62px; }
+  .page-section { min-height: calc(100vh - 62px); }
+  .workspace-page { height: calc(100vh - 62px); min-height: 560px; }
+  .workbench-result-card { top: 0; bottom: 62px; width: 100vw; }
+  .workbench-result-card:not(.is-collapsed) { width: 100vw; }
+  .writing-workbench.is-assistant-collapsed .workbench-result-card,
+  .workbench-result-card.is-collapsed {
+    top: auto;
+    right: 16px;
+    bottom: 78px;
+    width: auto;
+    height: 48px;
+    border: 0;
+    border-radius: 24px;
+    overflow: visible;
+    box-shadow: var(--shadow-md);
+  }
+  .writing-workbench.is-assistant-collapsed .assistant-collapsed-rail,
+  .workbench-result-card.is-collapsed .assistant-collapsed-rail {
+    width: auto;
+    height: 48px;
+    flex-direction: row;
+    padding: 0 18px;
+    border-radius: 24px;
+    background: var(--color-primary);
+    color: #fff;
+  }
+  .assistant-collapsed-rail span { writing-mode: initial; letter-spacing: 0; font-size: 13px; }
+
+  .entry-page { grid-template-columns: 1fr; }
+  .entry-right { order: -1; min-height: 100vh; padding: 24px; border-left: 0; }
+  .entry-left { display: none; }
+  .login-card { padding: 28px; }
+  .home-page, .microcourse-page, .personalized-page, .review-page { padding: 18px 14px 28px; }
+  .welcome-card { grid-template-columns: 1fr minmax(210px, 34%); min-height: 270px; padding: 22px; }
+  .home-hero-visual { min-height: 130px; }
+  .record-actions .mini-btn:not(.blue) { display: none; }
+  .growth-overview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .growth-solution-grid, .growth-training-grid, .growth-profile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .inline-review-dialog, .polish-review-dialog { inset: 12px; }
+  .inline-review-body { grid-template-columns: 1fr; overflow: hidden; }
+  .polish-review-body { grid-template-columns: 1fr; overflow-y: auto; }
+  .annotation-main { grid-template-columns: 1fr; overflow-x: hidden; overflow-y: auto; }
+  .enhanced-score-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .inline-review-pane + .inline-review-pane, .polish-review-pane + .polish-review-pane { border-left: 0; border-top: 1px solid var(--color-border); }
+  .inline-review-pane { min-height: 42vh; }
+  .polish-review-pane { min-height: 44vh; }
+  .polish-review-footer { align-items: flex-start; flex-direction: column; }
+}
+
+@media (max-width: 600px) {
+  body { font-size: 14px; }
+  .home-page { gap: 12px; }
+  .hero-grid, .home-bottom { gap: 12px; }
+  .welcome-card { grid-template-columns: 1fr; min-height: 0; padding: 20px; }
+  .home-hero-visual { display: none; }
+  .home-video-showcase { display: block; margin-top: 4px; }
+  .welcome-title { font-size: 27px; }
+  .hero-actions { flex-wrap: wrap; }
+  .hero-actions button { flex: 1 1 130px; }
+  .home-overview-card, .record-card, .home-insight-card { padding: 17px; }
+  .home-study-summary { grid-template-columns: 1fr 1fr; }
+  .record-main-row { align-items: flex-start; }
+  .record-actions { gap: 3px; }
+  .record-score { min-width: 56px; }
+  .record-actions .mini-btn { min-height: 34px; }
+
+  .workspace-page { padding: 0; }
+  .writing-workbench { border: 0; border-radius: 0; }
+  .workbench-metrics { min-height: 52px; padding: 0 14px; gap: 10px; }
+  .metric-chip.task-chip { display: none; }
+  .workbench-field { padding: 18px 18px 0; }
+  .workbench-writing-settings { grid-template-columns: 1fr; padding: 12px 18px 5px; }
+  .workbench-requirement-field { grid-column: auto; }
+  .workbench-title-input { font-size: 25px; }
+  .workbench-writing-area { padding: 0 18px; }
+  .workbench-content-input { min-height: 320px; padding-top: 18px; font-size: 17px; line-height: 1.9; }
+  .workbench-content-footer { left: 18px; right: 18px; }
+  .workbench-image-upload-btn { right: 20px; }
+  .workbench-submenu { grid-template-columns: 1fr 1fr; }
+  .workbench-score-summary-card { grid-template-columns: 62px 1fr; padding: 11px; }
+  .workbench-score-circle { width: 58px; height: 58px; }
+
+  .microcourse-hero-mark { display: none; }
+  .microcourse-hero h2, .growth-hero h2 { font-size: 26px; }
+  .microcourse-list, .growth-solution-grid, .growth-training-grid, .growth-profile-grid { grid-template-columns: 1fr; }
+  .growth-overview-grid { grid-template-columns: 1fr 1fr; }
+  .growth-path-steps { grid-template-columns: 1fr; }
+  .growth-core-layout { gap: 12px; }
+  .personal-card { padding: 17px; }
+  .profile-form-grid { grid-template-columns: 1fr; }
+
+  .login-modal-overlay, .profile-modal-overlay, .history-modal-overlay, .microcourse-modal-overlay { align-items: flex-end; padding: 0; }
+  .profile-modal, .history-modal, .microcourse-modal, .login-modal { width: 100%; max-height: 90vh; border-radius: 18px 18px 0 0; }
+  .history-modal-list { padding-inline: 14px; }
+  .history-modal-head, .history-modal-footer { padding-inline: 14px; }
+  .history-modal-actions button { min-height: 40px; }
+  .history-modal-footer { flex-wrap: wrap; }
+  .enhanced-score-grid { grid-template-columns: 1fr; }
+  .resource-preview-modal-overlay { align-items: flex-end; padding: 0; }
+  .resource-preview-modal { max-height: 92vh; border-radius: 18px 18px 0 0; }
+  .resource-preview-header, .resource-preview-body { padding: 16px; }
+
+  .inline-review-dialog, .polish-review-dialog { inset: 0 0 62px; border: 0; border-radius: 0; }
+  .inline-review-head, .polish-review-head { padding: 10px 14px; }
+  .inline-review-head p, .polish-review-head p { display: none; }
+  .inline-review-original-list, .inline-review-comment-list, .polish-review-text { padding: 16px; }
+  .polish-review-footer-actions { width: 100%; }
+  .polish-review-footer-actions button { flex: 1 1 120px; min-height: 40px; }
+}
+
+@media (max-width: 400px) {
+  .login-card { padding: 23px 19px; }
+  .home-study-summary, .growth-overview-grid { grid-template-columns: 1fr 1fr; }
+  .record-score { display: none; }
+  .workbench-metrics .metric-chip-label { display: none; }
+  .workbench-result-actions button { min-height: 40px; }
+}
+
+@media (min-width: 1600px) {
+  .workspace-page { padding: 16px 22px; }
+  .writing-workbench { max-width: 1760px; margin: 0 auto; }
+  .workbench-field, .workbench-writing-area, .workbench-writing-settings { padding-inline: 9%; }
+  .workbench-content-footer { left: 9%; right: 9%; }
+}

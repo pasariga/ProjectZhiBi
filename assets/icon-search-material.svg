@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="10" x2="78" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF5FF"/>
+      <stop offset="1" stop-color="#CFE7FF"/>
+    </linearGradient>
+    <linearGradient id="book" x1="24" y1="28" x2="68" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DCEBFF"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="96" height="96" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#2F78E8" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="80" height="80" rx="26" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <path d="M26 26h27c6 0 11 5 11 11v31H32c-3.3 0-6-2.7-6-6V26z" fill="url(#book)"/>
+    <path d="M34 37h18M34 47h14M34 57h10" stroke="#76A8EA" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="62" cy="56" r="13" fill="#FFFFFF" stroke="#2F78E8" stroke-width="5"/>
+    <path d="M72 66l9 9" stroke="#2F78E8" stroke-width="7" stroke-linecap="round"/>
+    <rect x="22" y="31" width="8" height="33" rx="4" fill="#7BD6A5"/>
+  </g>
+</svg>

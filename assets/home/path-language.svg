@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="120" viewBox="0 0 180 120" role="img" aria-label="语言提升">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfdf5"/>
+      <stop offset="1" stop-color="#eff6ff"/>
+    </linearGradient>
+    <linearGradient id="pen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10b981"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="120" rx="20" fill="url(#bg)"/>
+  <rect x="26" y="30" width="88" height="62" rx="12" fill="#fff" stroke="#dbeafe" stroke-width="2"/>
+  <path d="M42 47h48M42 60h58M42 73h36" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M112 74l34-34c4-4 11-4 15 0s4 11 0 15l-34 34-19 5z" fill="url(#pen)"/>
+  <path d="M142 44l14 14" stroke="#dbeafe" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="48" cy="32" r="13" fill="#dcfce7"/>
+  <path d="M42 32h12M48 26v12" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+</svg>

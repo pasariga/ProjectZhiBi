@@ -1,0 +1,38 @@
+[
+  {
+    "title": "国家中小学智慧教育平台",
+    "url": "https://basic.smartedu.cn/",
+    "desc": "按年级和学科查找语文课程、精品课与学习任务，适合作为写作练习的官方学习入口。",
+    "category": "学习入口"
+  },
+  {
+    "title": "基础教育精品课",
+    "url": "https://jpk.basic.smartedu.cn/",
+    "desc": "汇集中小学精品课程资源，可用于查找阅读、表达和写作相关微课。",
+    "category": "写作微课"
+  },
+  {
+    "title": "央视网教育",
+    "url": "https://edu.cctv.com/",
+    "desc": "提供课程、阅读和人文类内容，适合拓展作文素材和时事视野。",
+    "category": "素材积累"
+  },
+  {
+    "title": "光明网教育",
+    "url": "https://edu.gmw.cn/",
+    "desc": "关注教育热点、阅读写作与成长话题，可用于积累议论文观点和现实素材。",
+    "category": "素材积累"
+  },
+  {
+    "title": "学习强国",
+    "url": "https://www.xuexi.cn/",
+    "desc": "可检索文化、人物、时代主题等内容，适合补充立意、论据和主题素材。",
+    "category": "素材与方法"
+  },
+  {
+    "title": "中国作家网",
+    "url": "https://www.chinawriter.com.cn/",
+    "desc": "提供文学资讯与作品入口，适合拓展阅读、积累表达和文学素材。",
+    "category": "阅读积累"
+  }
+]

@@ -1,0 +1,46 @@
+# Local credentials (keep the public template)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Dependency and build outputs
+node_modules/
+dist/
+build/
+
+# Local databases, private uploads, and generated reports
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+/uploads/
+/downloads/
+*.log
+
+# Machine-local agent/editor and operating-system files
+.agents/
+.codex/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

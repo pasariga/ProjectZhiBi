@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="120" viewBox="0 0 180 120" role="img" aria-label="结构训练">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#ecfeff"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="120" rx="20" fill="url(#bg)"/>
+  <rect x="30" y="26" width="118" height="68" rx="14" fill="#ffffff" stroke="#c7d2fe" stroke-width="2"/>
+  <rect x="45" y="42" width="40" height="10" rx="5" fill="#6366f1"/>
+  <rect x="45" y="63" width="80" height="7" rx="3.5" fill="#bfdbfe"/>
+  <rect x="45" y="78" width="65" height="7" rx="3.5" fill="#bfdbfe"/>
+  <circle cx="128" cy="47" r="15" fill="#22c55e" opacity=".9"/>
+  <path d="M128 38v18M119 47h18" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M88 48h27M88 67h25M88 82h18" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+</svg>
